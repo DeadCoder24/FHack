@@ -89,7 +89,7 @@ def HIGH():
         counter = 0
         while counter < len(list_of_cells):
             if counter % 2 == 0:
-                print '\033[33m'+ list_of_cells[counter] + '\033[0m'
+                print '\033[33m' + list_of_cells[counter] + '\033[0m'
                 with open('./outputs/Info-Gathering/' + 'HIGH-' + url, 'a') as file:
                     file.write(str(list_of_cells[counter]) + '\n')
             counter += 1

@@ -4,14 +4,12 @@ try:
     from src.Colors import TextColor
     from core.menu import ShowItems
     from src.Mask import MaskTerminal
-    from WebAttack.sqlinjection import sql_website_attack
-    from WebAttack.crawler import crawler as craw
-    from WebAttack.dirbrute import dirbrut
     from src import libs
     from CoreManage import databasemanage
     from InfoGathering.ManageInfoGathering import mainInfoGathering
     from Config.FhackInitializer import InitFhack
     from CreateMalware.mainCreateMalware import mainCreateMalware
+    from WebAttack.mainWebAppPentest import mainWebAttack
 except Exception as err:
     raise SystemExit, TextColor.RED + str('\nSome thing wrong in libraries: %s\n' % err) + TextColor.WHITE
 
@@ -25,30 +23,8 @@ define_MAX_MenuItem_WEB_ATTACK = 4
 def Switch_Menu_Item(number):
     subMenu = ShowItems()
     if number == '1':  # web attack menu items
-        while True:
-            subMenu.ItemOfWebAttack()
-            choice = raw_input(TextColor.GREEN + str('Fhack ~/web-attack/# ') + TextColor.WHITE)
-            if choice == '0':
-                print
-                break
-            # --------------------------------------------------
-            if choice == '1':
-                sql_website_attack.start()
-            # --------------------------------------------------
-            elif choice == '2':
-                from WebAttack.xssinjection.xssmain import MainXSS
-                MainXSS()
-            # --------------------------------------------------
-            elif choice == '5':
-                url = raw_input(
-                    TextColor.PURPLE + TextColor.BOLD + str('Fhack ~/web-attack/Crawler/# Enter url of rhost: ') \
-                    + TextColor.WHITE)
-                if url.endswith('/'):
-                    url = url[0:len(url) - 1]
-                craw.SetWebSiteUrl(url=url)
-            # --------------------------------------------------
-            elif choice == '6':
-                dirbrut.Start()
+        subMenu.ItemOfWebAttack()
+        mainWebAttack()
     # --------------------------------------------------
     elif number == '2':
         subMenu.ItemOfCreateMalware()

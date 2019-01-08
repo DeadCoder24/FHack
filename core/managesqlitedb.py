@@ -7,6 +7,7 @@ try:
 except Exception as err:
     raise SystemError, TextColor.RED + str("Something is wrong with libreries " + err) + TextColor.WHITE
 
+
 class DirectoryFinerDB():
     def __init__(self):
         dbPath = os.getcwd() + "/core/dbs/dirbrute.db"
@@ -14,7 +15,8 @@ class DirectoryFinerDB():
             self.dbConnection = sqlite.connect(dbPath)
             self.__create_table__()
         else:
-            print TextColor.RED + str('Something is wrong in database:: database is not exist please create database file') + TextColor.WHITE
+            print TextColor.RED + str(
+                'Something is wrong in database:: database is not exist please create database file') + TextColor.WHITE
 
     def __create_table__(self):
         try:
@@ -22,8 +24,8 @@ class DirectoryFinerDB():
             cur.execute("""create table if not exists tbl_dirs (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
                              path varchar(100) not null unique);""")
             self.dbConnection.commit()
-        except sqlite.Error as err:
-            print TextColor.RED + str(err) + TextColor.WHITE
+        except sqlite.Error as error:
+            print TextColor.RED + str(error) + TextColor.WHITE
 
     def __insert_data__(self, value):
         try:
@@ -48,8 +50,8 @@ class DirectoryFinerDB():
             for row in results:
                 ret_results.append(row)
             return ret_results
-        except sqlite.Error as err:
-            print TextColor.RED + str(err) + TextColor.WHITE
+        except sqlite.Error as error:
+            print TextColor.RED + str(error) + TextColor.WHITE
 
     def __delete_data__(self, path):
         """ You can delete some records that you want
@@ -58,7 +60,7 @@ class DirectoryFinerDB():
         """
         try:
             cur = self.dbConnection.cursor()
-            cmd = "delete from tbl_dirs where path=%s"%(path)
+            cmd = "delete from tbl_dirs where path=%s" % (path)
             cur.execute(cmd)
             self.dbConnection.commit()
             cur.close()
@@ -73,7 +75,7 @@ class DirectoryFinerDB():
         """
         try:
             cur = self.dbConnection.cursor()
-            cmd = "update tbl_dirs set path=? where id=%s"%(id)
+            cmd = "update tbl_dirs set path=? where id=%s" % (id)
             cur.execute(cmd, id)
             self.dbConnection.commit()
             cur.close()
@@ -82,15 +84,15 @@ class DirectoryFinerDB():
             return False
 
 
-class WebAttackDb():
+class WebAttackDb:
     def __init__(self):
         dbPath = os.getcwd() + "/core/dbs/webattack.db"
         if os.path.exists(dbPath):
             self.dbConnection = sqlite.connect(dbPath)
             self.__create_table__()
         else:
-            print TextColor.RED + str('Something is wrong in database:: database is not exist please create database file') + TextColor.WHITE
-
+            print TextColor.RED + str(
+                'Something is wrong in database:: database is not exist please create database file') + TextColor.WHITE
 
     def __create_table__(self):
         try:
@@ -108,8 +110,8 @@ class WebAttackDb():
             self.dbConnection.commit()
             conn.close()
             return True
-        except sqlite.Error as err:
-            print TextColor.RED + str(err) + TextColor.WHITE
+        except sqlite.Error as error:
+            print TextColor.RED + str(error) + TextColor.WHITE
             return False
 
     def __raw_query__(self, query):
@@ -134,7 +136,7 @@ class WebAttackDb():
         """
         try:
             cur = self.dbConnection.cursor()
-            cmd = "delete from tbl_xss_payloads where payload=%s"%(path)
+            cmd = "delete from tbl_xss_payloads where payload=%s" % (path)
             cur.execute(cmd)
             self.dbConnection.commit()
             cur.close()
@@ -149,7 +151,7 @@ class WebAttackDb():
         """
         try:
             cur = self.dbConnection.cursor()
-            cmd = "update tbl_xss_payloads set payload=? where id=%s"%(id)
+            cmd = "update tbl_xss_payloads set payload=? where id=%s" % (id)
             cur.execute(cmd, id)
             self.dbConnection.commit()
             cur.close()
