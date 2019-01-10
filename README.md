@@ -14,7 +14,12 @@ We coming soon.
 |topcoder|creator and programmer|topcodermc@gmail.com
 
 
-![License](https://img.shields.io/badge/license-GPLv3-blue.svg) ![CORE](https://img.shields.io/badge/core-1.0.1.3-green.svg) ![Build](https://img.shields.io/badge/BUILD-4-red.svg) ![Modules](https://img.shields.io/badge/modules-5-green.svg) ![Python](https://img.shields.io/badge/Python-2.7-green.svg) 
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg) 
+![CORE](https://img.shields.io/badge/core-1.0.1.3-green.svg)
+![Build](https://img.shields.io/badge/BUILD-4-red.svg)
+![Modules](https://img.shields.io/badge/modules-5-green.svg)
+![Python](https://img.shields.io/badge/Python-2.7-green.svg) 
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)
 ![alt text](./about/FhackImage.png)
 
 
@@ -27,7 +32,7 @@ We coming soon.
 |MACOS|1.0|yes|yes|working|
 
 # INSTALLATION
-For the installation of FHack framework it's necesary to install all [dependencies](https://github.com/PowerScript/KatanaFramework/wiki/Requisites) for a good performance.
+For the installation of FHack framework it's necesary to install all libraries that exist in [libs_used] for a good performance.
 <pre><i><n>git clone https://github.com/topcoder-mc/FHack.git
 cd FHack
 sudo -s

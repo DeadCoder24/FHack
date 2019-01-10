@@ -14,15 +14,15 @@
     <session id="-481858675">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="56" />
+          <entry key="project.closed" value="58" />
           <entry key="project.open.time.0" value="8" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.4" value="12" />
-          <entry key="project.open.time.5" value="23" />
+          <entry key="project.open.time.5" value="25" />
           <entry key="project.open.time.6" value="7" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="57" />
+          <entry key="project.opened" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -33,7 +33,7 @@
           <entry key="html" value="3468" />
           <entry key="js" value="663" />
           <entry key="libs_used" value="8" />
-          <entry key="md" value="410" />
+          <entry key="md" value="465" />
           <entry key="payloads" value="11" />
           <entry key="py" value="29899" />
           <entry key="tasks" value="481" />
@@ -44,7 +44,7 @@
           <entry key="CSS" value="803" />
           <entry key="HTML" value="3468" />
           <entry key="JavaScript" value="663" />
-          <entry key="Markdown" value="410" />
+          <entry key="Markdown" value="465" />
           <entry key="PLAIN_TEXT" value="778" />
           <entry key="Python" value="29899" />
         </counts>
@@ -126,8 +126,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="352">
-                <caret line="16" column="111" selection-start-line="16" selection-start-column="111" selection-end-line="16" selection-end-column="111" />
+              <first_editor relative-caret-position="516">
+                <caret line="34" column="94" lean-forward="true" selection-start-line="34" selection-start-column="94" selection-end-line="34" selection-end-column="94" />
               </first_editor>
               <second_editor />
             </state>
@@ -257,41 +257,6 @@
               <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
               <item name="FHack" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FHack" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateMalware" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FHack" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateMalware" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FHack" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateMalware" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="codeinjection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FHack" type="462c0819:PsiDirectoryNode" />
-              <item name="InfoGathering" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FHack" type="462c0819:PsiDirectoryNode" />
-              <item name="InfoGathering" type="462c0819:PsiDirectoryNode" />
-              <item name="ReverseIpLookUp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FHack" type="462c0819:PsiDirectoryNode" />
-              <item name="InfoGathering" type="462c0819:PsiDirectoryNode" />
-              <item name="simple_tools" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -408,7 +373,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16349542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16349542" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -664,9 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="101" selection-start-line="19" selection-start-column="101" selection-end-line="19" selection-end-column="101" />
-          <folding>
-            <marker date="1546984909695" expanded="true" signature="357:358" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,18 +639,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/Info-Gathering/WHOIS-esecurity.ir">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/Info-Gathering/WHOIS-esecurity.ir" />
     <entry file="file://$PROJECT_DIR$/InfoGathering/simple_tools/whois.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <marker date="1546986829019" expanded="true" signature="171:336" ph="..." />
-            <marker date="1546986829019" expanded="true" signature="540:541" ph="..." />
-            <marker date="1546986829019" expanded="true" signature="540:910" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -709,8 +664,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="352">
-            <caret line="16" column="111" selection-start-line="16" selection-start-column="111" selection-end-line="16" selection-end-column="111" />
+          <first_editor relative-caret-position="516">
+            <caret line="34" column="94" lean-forward="true" selection-start-line="34" selection-start-column="94" selection-end-line="34" selection-end-column="94" />
           </first_editor>
           <second_editor />
         </state>
