@@ -12,11 +12,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="183">
+                <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CreateMalware/android/codeinjection/apkcodeinjection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+            <state relative-caret-position="534">
+              <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -121,8 +133,8 @@
         <option value="$PROJECT_DIR$/WebAttack/mainWebAppPentest.py" />
         <option value="$PROJECT_DIR$/InfoGathering/ManageInfoGathering.py" />
         <option value="$PROJECT_DIR$/InfoGathering/simple_tools/whois.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/CreateMalware/android/codeinjection/apkcodeinjection.py" />
       </list>
     </option>
@@ -187,6 +199,15 @@
               <item name="Malwares" type="462c0819:PsiDirectoryNode" />
               <item name="CreateMalware" type="462c0819:PsiDirectoryNode" />
               <item name="Android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FHack" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
+              <item name="Malwares" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateMalware" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
+              <item name="HiddenLocker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -331,8 +352,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../shop/shop_tco/shop/models.py" />
-    <entry file="file://$PROJECT_DIR$/../shop/shop_tco/shop/templatetags/basetags.py" />
     <entry file="file://$PROJECT_DIR$/../shop/shop_tco/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/../shop/shop_tco/templates/product.html" />
     <entry file="file://$PROJECT_DIR$/../shop/shop_tco/shop/views.py" />
@@ -536,16 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="156">
-            <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CreateMalware/mainCreateMalware.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -574,10 +583,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/Malwares/CreateMalware/Android/HiddenLocker/original/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2592" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/Malwares/CreateMalware/Android/HiddenLocker/apktool.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="183">
+            <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CreateMalware/android/codeinjection/apkcodeinjection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        <state relative-caret-position="534">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
         </state>
       </provider>
     </entry>
