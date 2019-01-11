@@ -15,17 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CreateMalware/android/codeinjection/apkcodeinjection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InfoGathering/simple_tools/whois.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="683">
+              <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -174,13 +165,28 @@
             <path>
               <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
               <item name="FHack" type="462c0819:PsiDirectoryNode" />
-              <item name="InfoGathering" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
               <item name="FHack" type="462c0819:PsiDirectoryNode" />
-              <item name="InfoGathering" type="462c0819:PsiDirectoryNode" />
-              <item name="simple_tools" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
+              <item name="Malwares" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FHack" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
+              <item name="Malwares" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateMalware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FHack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FHack" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
+              <item name="Malwares" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateMalware" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -563,15 +569,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InfoGathering/simple_tools/whois.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="330">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CreateMalware/android/codeinjection/apkcodeinjection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="683">
+          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
         </state>
       </provider>
     </entry>
