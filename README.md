@@ -15,8 +15,8 @@ We coming soon.
 
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg) 
-![CORE](https://img.shields.io/badge/core-1.0.1.3-green.svg)
-![Build](https://img.shields.io/badge/BUILD-4-red.svg)
+![CORE](https://img.shields.io/badge/core-1.0.1.4-green.svg)
+![Build](https://img.shields.io/badge/BUILD-5-red.svg)
 ![Modules](https://img.shields.io/badge/modules-5-green.svg)
 ![Python](https://img.shields.io/badge/Python-2.7-green.svg) 
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)
