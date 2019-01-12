@@ -9,14 +9,13 @@ except Exception as error:
 def LinuxDebian_Ubuntu_Setup():
 
     def InstallCreateMalwareTools():
-        os.system("sudo pip -r install libs_used")
         os.system("sudo apt-get install apktool")
-
-
 
     InstallCreateMalwareTools()
 
 def main():
+
+    os.system("sudo pip install -r libs_used")
 
     if RecOS.IsOSLinux():
         if "Ubuntu" in RecOS.getLinuxDistr():
