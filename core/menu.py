@@ -32,6 +32,7 @@ class ShowItems:
         print str('|4. Login password bruteforce')
         print str('|5. Crawl website')
         print str('|6. Directory finder')
+        print str('|7. Extract Website')
         print str('|0. Exit') + TextColor.WHITE
 
     @staticmethod
