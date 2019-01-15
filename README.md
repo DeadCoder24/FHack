@@ -15,7 +15,7 @@ We coming soon.
 
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg) 
-![CORE](https://img.shields.io/badge/core-1.0.1.6-green.svg)
+![CORE](https://img.shields.io/badge/core-1.0.1.7-green.svg)
 ![Build](https://img.shields.io/badge/BUILD-7-red.svg)
 ![Modules](https://img.shields.io/badge/modules-5-green.svg)
 ![Python](https://img.shields.io/badge/Python-2.7-green.svg) 
