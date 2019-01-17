@@ -12,3 +12,9 @@
 [done] Working on xss attack to search the whole of web site
 [-] Working on xss attack to get payloads from payload file and take single payload
 # end
+
+//..................
+    package for createmalware for android
+
+    #apt-get install openjdk-11-jdk-headless
+    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore -storepass 123456  HiddenLocker.apk alias_name
