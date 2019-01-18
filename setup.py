@@ -10,6 +10,7 @@ def LinuxDebian_Ubuntu_Setup():
 
     def InstallCreateMalwareTools():
         os.system("sudo apt-get install apktool")
+        os.system("sudo apt-get install openjdk-11-jdk-headless")
 
     InstallCreateMalwareTools()
 
