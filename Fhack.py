@@ -8,6 +8,7 @@ try:
     from CoreManage import databasemanage
     from InfoGathering.ManageInfoGathering import mainInfoGathering
     from Config.FhackInitializer import InitFhack
+    from NetworkPentest.mainNetworkPentest import mainNetworkPentest
     from CreateMalware.mainCreateMalware import mainCreateMalware
     from WebAttack.mainWebAppPentest import mainWebAttack
 except Exception as err:
@@ -29,6 +30,10 @@ def Switch_Menu_Item(number):
     elif number == '2':
         subMenu.ItemOfCreateMalware()
         mainCreateMalware()
+    # --------------------------------------------------
+    elif number == '4':
+        subMenu.ItemOfNetworkPentest()
+        mainNetworkPentest()
     # --------------------------------------------------
     elif number == '6':
         subMenu.ItemOfInformationGathering()
