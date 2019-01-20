@@ -8,8 +8,7 @@
 [---] we have too many problem in exploiting of php sql injection
 
 ==--==--==--==--==--==--==--==--==--==--==--==--==
-[-] Work on directory bruteforce 30/December/2018
-[done] Working on xss attack to search the whole of web site
+[-] Work on directory bruteforce its not finished yet
 [-] Working on xss attack to get payloads from payload file and take single payload
 # end
 
