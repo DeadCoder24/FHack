@@ -7,23 +7,46 @@ except Exception as error:
 
 
 def LinuxDebian_Ubuntu_Setup():
-
-    def InstallCreateMalwareTools():
-        os.system("sudo apt-get install apktool")
+    def InstallCreateMalwareTool_Android():
+        print TextColor.WARNING + "[*] Please wait for instaling android tools" + TextColor.WHITE
         os.system("sudo apt-get install openjdk-11-jdk-headless")
+        os.system("sudo apt-get install apktool")
+        print TextColor.GREEN + "[+] Done" + TextColor.WHITE
 
-    InstallCreateMalwareTools()
+    InstallCreateMalwareTool_Android()
+
+
+def MACOS_Setup():
+    def InstallCreateMalwareTool_Android():
+        print TextColor.WARNING + "[*] Please wait for instaling android tools" + TextColor.WHITE
+        os.system("brew cask install java")
+        os.system('brew install apktool')
+        print TextColor.GREEN + "[+] Done" + TextColor.WHITE
+
+    InstallCreateMalwareTool_Android()
+
 
 def main():
-
     os.system("sudo pip install -r libs_used")
 
     if RecOS.IsOSLinux():
         if "Ubuntu" in RecOS.getLinuxDistr():
             LinuxDebian_Ubuntu_Setup()
 
+    elif RecOS.IsOSDarwin():
+        import subprocess as subproc
+        command = ['brew', '-v']
+        process = subproc.Popen(command, stdout=subproc.PIPE, stderr=subproc.PIPE)
+        brewVersion, error = process.communicate()
+
+        if brewVersion is not "":
+            MACOS_Setup()
+        else:
+            print TextColor.RED + "\nPlease install brew App from the internet\n" + TextColor.WHITE
+
 
 if __name__ == "__main__":
-    main()
-
-
+    try:
+        main()
+    except KeyboardInterrupt:
+        raise SystemExit, TextColor.RED + '[-] Installe escaped ...' + TextColor.WHITE
