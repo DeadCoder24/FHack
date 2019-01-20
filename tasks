@@ -13,8 +13,7 @@
 # end
 
 //..................
-    package for createmalware for android
-
+[-] write changes on each version on web browser page
     #apt-get install openjdk-11-jdk-headless
     jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore -storepass 123456  HiddenLocker.apk alias_name
 
