@@ -3,8 +3,8 @@
 try:
     from src.Colors import TextColor
     from src.libs import sys
-except Exception as err:
-    raise SystemExit, TextColor.RED + "Something is wrong: %s" % (err) + TextColor.WHITE
+except Exception as error:
+    raise SystemExit, TextColor.RED + "Something is wrong: %s" % (error) + TextColor.WHITE
 
 
 # show items of attack
@@ -54,4 +54,10 @@ class ShowItems:
     def ItemOfCreateMalware():
         print TextColor.HEADER + TextColor.UNDERLINE + str('|------Create Malware------|') + TextColor.WHITE
         print TextColor.CYAN + str('|1. apk injection')
+        print str('|0. Exit') + TextColor.WHITE
+
+    @staticmethod
+    def ItemOfNetworkPentest():
+        print TextColor.HEADER + TextColor.UNDERLINE + str('|------Network Pentest------|') + TextColor.WHITE
+        print TextColor.CYAN + str('|1. Network Detail')
         print str('|0. Exit') + TextColor.WHITE
