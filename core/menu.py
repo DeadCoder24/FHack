@@ -59,5 +59,5 @@ class ShowItems:
     @staticmethod
     def ItemOfNetworkPentest():
         print TextColor.HEADER + TextColor.UNDERLINE + str('|------Network Pentest------|') + TextColor.WHITE
-        print TextColor.CYAN + str('|1. Network Detail')
+        print TextColor.CYAN + str('|1. Collect network info')
         print str('|0. Exit') + TextColor.WHITE
