@@ -15,7 +15,7 @@ We coming soon.
 
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg) 
-![CORE](https://img.shields.io/badge/core-1.1.5.15-green.svg)
+![CORE](https://img.shields.io/badge/core-1.1.6.16-green.svg)
 ![Build](https://img.shields.io/badge/BUILD-9-red.svg)
 ![Modules](https://img.shields.io/badge/modules-6-green.svg)
 ![Python](https://img.shields.io/badge/Python-2.7-green.svg) 
@@ -29,7 +29,7 @@ We coming soon.
 |Distribution | Version Check | supported | dependencies already installed |status |
 ----------|-------|------|------|-------|
 |Debian(8)|1.1 | yes| yes | working   |
-|MACOS|1.1|yes|no|working|
+|MACOS|1.1|yes|yes|working|
 
 # INSTALLATION
 For the installation of FHack framework it's necesary to install all libraries that exist in [libs_used] for a good performance.
