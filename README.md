@@ -15,7 +15,7 @@ We coming soon.
 
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg) 
-![CORE](https://img.shields.io/badge/core-1.1.6.20-green.svg)
+![CORE](https://img.shields.io/badge/core-1.1.6.21-green.svg)
 ![Build](https://img.shields.io/badge/BUILD-10-red.svg)
 ![Modules](https://img.shields.io/badge/modules-6-green.svg)
 ![Python](https://img.shields.io/badge/Python-2.7-green.svg) 
@@ -36,5 +36,5 @@ For the installation of FHack framework it's necesary to install all libraries t
 <pre><i><n>git clone https://github.com/topcoder-mc/FHack.git
 cd FHack
 sudo -s
-pip install -r libs_used 
+python setup.py
 </pre></i></n>
