@@ -14,10 +14,10 @@ We coming soon.
 |topcoder|creator and programmer|topcodermc@gmail.com
 
 
-![License](https://img.shields.io/badge/license-GPLv3-blue.svg) 
-![CORE](https://img.shields.io/badge/core-1.1.6.22-green.svg)
-![Build](https://img.shields.io/badge/BUILD-10-red.svg)
-![Modules](https://img.shields.io/badge/modules-6-green.svg)
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
+![CORE](https://img.shields.io/badge/core-1.2.7.23-green.svg)
+![Build](https://img.shields.io/badge/BUILD-11-red.svg)
+![Modules](https://img.shields.io/badge/modules-7-green.svg)
 ![Python](https://img.shields.io/badge/Python-2.7-green.svg) 
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)
 ![alt text](./about/FhackImage.png)
@@ -29,7 +29,7 @@ We coming soon.
 |Distribution | Version Check | supported | dependencies already installed |status |
 ----------|-------|------|------|-------|
 |Debian(8)|1.1 | yes| yes | working   |
-|MACOS|1.1|yes|yes|working|
+|MACOS|1.2|yes|yes|working|
 
 # INSTALLATION
 For the installation of FHack framework it's necesary to install all libraries that exist in [libs_used] for a good performance.
