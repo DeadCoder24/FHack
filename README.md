@@ -15,7 +15,7 @@ We coming soon.
 
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
-![CORE](https://img.shields.io/badge/core-1.2.7.23-green.svg)
+![CORE](https://img.shields.io/badge/core-1.2.7.24-green.svg)
 ![Build](https://img.shields.io/badge/BUILD-11-red.svg)
 ![Modules](https://img.shields.io/badge/modules-7-green.svg)
 ![Python](https://img.shields.io/badge/Python-2.7-green.svg) 
@@ -28,7 +28,7 @@ We coming soon.
 # SUPPORTED DISTRIBUTIONS
 |Distribution | Version Check | supported | dependencies already installed |status |
 ----------|-------|------|------|-------|
-|Debian(8)|1.1 | yes| yes | working   |
+|Debian(8)|1.2 | yes| yes | working   |
 |MACOS|1.2|yes|yes|working|
 
 # INSTALLATION
