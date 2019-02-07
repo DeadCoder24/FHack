@@ -8,12 +8,18 @@ except Exception as error:
 
 def LinuxDebian_Ubuntu_Setup():
     def InstallCreateMalwareTool_Android():
-        print TextColor.WARNING + "[*] Please wait for instaling android tools" + TextColor.WHITE
+        print TextColor.WARNING + "[*] Please wait for installing android tools" + TextColor.WHITE
         os.system("sudo apt-get install openjdk-11-jdk-headless")
         os.system("sudo apt-get install apktool")
-        print TextColor.GREEN + "[+] Done" + TextColor.WHITE
+        print TextColor.GREEN + "[+] Android tools installed successfully" + TextColor.WHITE
+
+    def InstallNetowkTools():
+        print TextColor.WARNING + "[*] Please wait for installing network tools" + TextColor.WHITE
+        os.system("sudo apt-get install nmap")
+        print TextColor.GREEN + "[+] Network tools installed successfully" + TextColor.WHITE
 
     InstallCreateMalwareTool_Android()
+    InstallNetowkTools()
 
 
 def MACOS_Setup():
@@ -23,7 +29,13 @@ def MACOS_Setup():
         os.system('brew install apktool')
         print TextColor.GREEN + "[+] Done" + TextColor.WHITE
 
+    def InstallNetowkTools():
+        print TextColor.WARNING + "[*] Please wait for installing network tools" + TextColor.WHITE
+        os.system("brew install nmap")
+        print TextColor.GREEN + "[+] Network tools installed successfully" + TextColor.WHITE
+       
     InstallCreateMalwareTool_Android()
+    InstallNetowkTools()
 
 
 def main():
