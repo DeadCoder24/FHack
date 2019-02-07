@@ -33,7 +33,7 @@ def MACOS_Setup():
         print TextColor.WARNING + "[*] Please wait for installing network tools" + TextColor.WHITE
         os.system("brew install nmap")
         print TextColor.GREEN + "[+] Network tools installed successfully" + TextColor.WHITE
-       
+
     InstallCreateMalwareTool_Android()
     InstallNetowkTools()
 
