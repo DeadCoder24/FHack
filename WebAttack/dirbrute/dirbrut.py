@@ -16,12 +16,13 @@ def run_thread(url_list):
     response = reqs.get(url=url_list, headers=define_headerdata,
                         verify=False).status_code
     if response == 200:
-        print TextColor.GREEN + '[+] Found %s' % url_list + TextColor.WHITE
+        print TextColor.GREEN + '[+] Found %s => status code:ls' \
+                                ' %s' % (url_list, response) + TextColor.WHITE
         fileName = lib.urlparse.urlparse(url_list)[1]
         with open('./outputs/DirFinder/' + str(fileName), 'a+') as file:
             file.write(url_list + "\n")
     else:
-        print TextColor.RED + '[-] Not found %s' % url_list + TextColor.WHITE
+        print TextColor.RED + '[-] Not found %s => status code: %s' % (url_list, response) + TextColor.WHITE
 
 
 def start_check_url(url_list_items, rhost):
@@ -33,7 +34,7 @@ def start_check_url(url_list_items, rhost):
         finalUrls.append(rhost + "/" + item.strip('\n'))
 
     # create multi thread and then check urls that exists or not
-    pool = Pool(processes=cpu_count() + 2)
+    pool = Pool(processes=cpu_count() + 4)
     pool.map(run_thread, finalUrls)
     pool.join()
 

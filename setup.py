@@ -42,7 +42,7 @@ def main():
     os.system("sudo pip install -r libs_used")
 
     if RecOS.IsOSLinux():
-        if "Ubuntu" in RecOS.getLinuxDistr():
+        if "Ubuntu" in RecOS.getLinuxDist():
             LinuxDebian_Ubuntu_Setup()
 
     elif RecOS.IsOSDarwin():
