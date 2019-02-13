@@ -54,6 +54,8 @@ class ShowItems:
     def ItemOfCreateMalware():
         print TextColor.HEADER + TextColor.UNDERLINE + str('|------Create Malware------|') + TextColor.WHITE
         print TextColor.CYAN + str('|1. apk injection')
+        print "|2. windows app code injection"
+        print "|3. linux app code injection"
         print str('|0. Exit') + TextColor.WHITE
 
     @staticmethod
