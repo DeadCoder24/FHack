@@ -19,5 +19,9 @@ def ManageSelectedItems(selectedItem):
         ReverseIpLookUp()
     elif selectedItem == '2':
         whois()
+    elif selectedItem == '3':
+        print TextColor.WHITESMOKE + "[-] Please wait this module on construction"
+    elif selectedItem == "0":
+        return
     else:
         print TextColor.RED + '[-] Please select from menu' + TextColor.WHITE
