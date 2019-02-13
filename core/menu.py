@@ -4,7 +4,7 @@ try:
     from src.Colors import TextColor
     from src.libs import sys
 except Exception as error:
-    raise SystemExit, TextColor.RED + "Something is wrong: %s" % (error) + TextColor.WHITE
+    raise SystemExit, TextColor.RED + "Something is wrong: %s" % error + TextColor.WHITE
 
 
 # show items of attack
@@ -47,7 +47,8 @@ class ShowItems:
     def ItemOfInformationGathering():
         print TextColor.HEADER + TextColor.UNDERLINE + str('|------Information Gathering------|') + TextColor.WHITE
         print TextColor.CYAN + str('|1. Reverse IP lookup')
-        print TextColor.CYAN + str('|2. Whois')
+        print '|2. Whois'
+        print "|3. Find user in social networks"
         print str('|0. Exit') + TextColor.WHITE
 
     @staticmethod
