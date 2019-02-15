@@ -49,6 +49,7 @@ class ShowItems:
         print TextColor.CYAN + str('|1. Reverse IP lookup')
         print '|2. Whois'
         print "|3. Find user in social networks"
+        print '|4. Find Subdomain'
         print str('|0. Exit') + TextColor.WHITE
 
     @staticmethod

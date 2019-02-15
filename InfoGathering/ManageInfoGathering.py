@@ -2,6 +2,7 @@ try:
     from src.Colors import TextColor
     from .ReverseIpLookUp.reverseip import ReverseIpLookUp
     from .simple_tools.whois import whois
+    from .simple_tools.FindSubDomains import Main_FindSubdomain
 except Exception as err:
     raise SystemError, '\033[31m' + 'Some error happened please check it: %s' % err + '\033[0m'
 
@@ -21,6 +22,8 @@ def ManageSelectedItems(selectedItem):
         whois()
     elif selectedItem == '3':
         print TextColor.WHITESMOKE + "[-] Please wait this module on construction"
+    elif selectedItem == '4':
+        Main_FindSubdomain()
     elif selectedItem == "0":
         print
         return
