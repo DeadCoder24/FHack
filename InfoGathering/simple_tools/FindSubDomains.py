@@ -40,7 +40,7 @@ def GetSubDomains(rhost):
 
     for subdomain in subdomains:
         print TextColor.GREEN + str("[+] {subdomain}".format(subdomain=subdomain)) + TextColor.WHITE
-        
+
     print
 
 
