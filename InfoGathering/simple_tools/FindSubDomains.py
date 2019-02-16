@@ -23,7 +23,11 @@ def CleanUrl(rhost):
 
 def GetSubDomains(rhost):
     subdomains = []
-    target = CleanUrl(rhost)
+
+    if host.startswith('https://'):
+        target = CleanUrl(rhost[8:])
+    elif host.startswith('http://'):
+        target = CleanUrl(rhost[7:])
 
     req = lib.requests.get("https://crt.sh/?q=%.{rhost}&output=json".format(rhost=target))
 
@@ -34,7 +38,8 @@ def GetSubDomains(rhost):
     for (key, value) in enumerate(req.json()):
         subdomains.append(value['name_value'])
 
-    print(TextColor.WARNING + "\n[!] ---- SUBDOMAINS OF TARGET: {rhost} ---- [!] \n".format(rhost=target)) + TextColor.WHITE
+    print(TextColor.WARNING + "\n[!] ---- SUBDOMAINS OF TARGET: {rhost} ---- [!] \n".format(
+        rhost=target)) + TextColor.WHITE
 
     subdomains = sorted(set(subdomains))
 
@@ -56,20 +61,18 @@ def Main_FindSubdomain():
     print TextColor.WARNING + str('[*] Please wait to set web host') + TextColor.WHITE
 
     try:
-        GetSubDomains(rhost)
-
-#        responseCode = lib.requests.get(url=rhost, headers=define_headerdata, allow_redirects=False,
-#                                       verify=False).status_code
+        responseCode = lib.requests.get(url=rhost, headers=define_headerdata, allow_redirects=False,
+                                        verify=False).status_code
     except Exception as error:
         print TextColor.RED + str('Some error happend: %s' % error) + TextColor.WHITE
         return
 
-    # if responseCode == 200:
-    #     print TextColor.GREEN + str('[+] Web Host set successfully') + TextColor.WHITE
-    #     GetSubDomains(rhost)
-    # else:
-    #     print TextColor.RED + str('[-] Web host not set check it then try again') + TextColor.WHITE
-    #     return
+    if responseCode == 200:
+        print TextColor.GREEN + str('[+] Web Host set successfully') + TextColor.WHITE
+        GetSubDomains(rhost)
+    else:
+        print TextColor.RED + str('[-] Web host not set check it then try again') + TextColor.WHITE
+        return
 
 
 if __name__ == "__main__":

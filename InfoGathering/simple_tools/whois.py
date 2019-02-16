@@ -1,7 +1,6 @@
 try:
     from src.Colors import TextColor
     import subprocess
-    import os
 except Exception as error:
     raise SystemExit, '\033[31m' + error + "\033[0m"
 

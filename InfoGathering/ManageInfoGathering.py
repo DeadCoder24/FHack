@@ -3,6 +3,7 @@ try:
     from .ReverseIpLookUp.reverseip import ReverseIpLookUp
     from .simple_tools.whois import whois
     from .simple_tools.FindSubDomains import Main_FindSubdomain
+    import os
 except Exception as err:
     raise SystemError, '\033[31m' + 'Some error happened please check it: %s' % err + '\033[0m'
 
