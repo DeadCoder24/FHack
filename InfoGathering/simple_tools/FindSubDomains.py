@@ -24,9 +24,9 @@ def CleanUrl(rhost):
 def GetSubDomains(rhost):
     subdomains = []
 
-    if host.startswith('https://'):
+    if rhost.startswith('https://'):
         target = CleanUrl(rhost[8:])
-    elif host.startswith('http://'):
+    elif rhost.startswith('http://'):
         target = CleanUrl(rhost[7:])
 
     req = lib.requests.get("https://crt.sh/?q=%.{rhost}&output=json".format(rhost=target))
@@ -38,7 +38,7 @@ def GetSubDomains(rhost):
     for (key, value) in enumerate(req.json()):
         subdomains.append(value['name_value'])
 
-    print(TextColor.WARNING + "\n[!] ---- SUBDOMAINS OF TARGET: {rhost} ---- [!] \n".format(
+    print(TextColor.WARNING + "\n[*] =========== SUBDOMAINS OF TARGET: {rhost} =========== [*] \n".format(
         rhost=target)) + TextColor.WHITE
 
     subdomains = sorted(set(subdomains))
@@ -46,8 +46,8 @@ def GetSubDomains(rhost):
     for subdomain in subdomains:
         print TextColor.GREEN + str("[+] {subdomain}".format(subdomain=subdomain)) + TextColor.WHITE
 
-        with open('./outputs/Info-Gathering/' + 'SUBDOMAIN-' + rhost, 'a') as file:
-            file.write(out)
+        with open('./outputs/Info-Gathering/' + 'SUBDOMAIN-' + target, 'a') as file:
+            file.write(subdomain + "\n")
 
     print
 
