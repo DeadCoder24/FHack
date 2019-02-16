@@ -16,6 +16,10 @@ def mainInfoGathering():
 
 
 def ManageSelectedItems(selectedItem):
+
+    if not os.path.exists('./outputs/Info-Gathering'):
+        os.mkdir('./outputs/Info-Gathering')
+
     if selectedItem == '1':
         ReverseIpLookUp()
     elif selectedItem == '2':

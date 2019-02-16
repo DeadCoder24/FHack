@@ -16,9 +16,6 @@ def MASK():
 
 def whois():
 
-    if not os.path.exists('./outputs/Info-Gathering'):
-        os.mkdir('./outputs/Info-Gathering')
-
     url = raw_input(TextColor.CVIOLET + '~/info-gathering/# Whois (e.g: example.com): ')
 
     process = subprocess.Popen(['whois', url], stdout=subprocess.PIPE, stderr=subprocess.PIPE)

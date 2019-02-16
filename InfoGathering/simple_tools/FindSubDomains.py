@@ -41,6 +41,9 @@ def GetSubDomains(rhost):
     for subdomain in subdomains:
         print TextColor.GREEN + str("[+] {subdomain}".format(subdomain=subdomain)) + TextColor.WHITE
 
+        with open('./outputs/Info-Gathering/' + 'SUBDOMAIN-' + rhost, 'a') as file:
+            file.write(out)
+
     print
 
 
@@ -56,7 +59,7 @@ def Main_FindSubdomain():
         GetSubDomains(rhost)
 
 #        responseCode = lib.requests.get(url=rhost, headers=define_headerdata, allow_redirects=False,
- #                                       verify=False).status_code
+#                                       verify=False).status_code
     except Exception as error:
         print TextColor.RED + str('Some error happend: %s' % error) + TextColor.WHITE
         return
