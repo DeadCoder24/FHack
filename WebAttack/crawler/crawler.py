@@ -111,10 +111,10 @@ class Crawler(object):
                 # algorithm of crawling on website page
                 if response.status_code == 200:
 
-                    if IsOSDarwin():  # parser os lxml not working on mac OS <Darwin>
-                        soup = lib.BS(response.content, "html.parser")
-                    else:
-                        soup = lib.BS(response.content, "lxml")
+                    #if IsOSDarwin():  # parser os lxml not working on mac OS <Darwin>
+                    soup = lib.BS(response.content, "html.parser")
+                    #else:
+                    #    soup = lib.BS(response.content, "lxml")
                     for line in soup.find_all('a', href=True):
                         if lib.urlparse.urlparse(line['href']):
                             sleep(0.2)
