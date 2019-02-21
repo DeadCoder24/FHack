@@ -76,10 +76,7 @@ def HIGH():
         for item in xrange(start, end):
             result += response.content[item]
 
-        if IsOSDarwin():  # parser os lxml not working on mac OS <Darwin>
-            soup = lib.BS(result, "html.parser")
-        else:
-            soup = lib.BS(result, "lxml")
+        soup = lib.BS(result, "html.parser")
 
         list_of_cells = []
         for cell in soup.find_all('td'):
