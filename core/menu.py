@@ -50,6 +50,7 @@ class ShowItems:
         print '|2. Whois'
         print "|3. Find user in social networks"
         print '|4. Find Subdomain'
+        print '|5. WebSite Recon'
         print str('|0. Exit') + TextColor.WHITE
 
     @staticmethod
